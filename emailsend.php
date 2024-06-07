@@ -9,7 +9,7 @@ if (isset($_POST['submit']))
     $subject = $_POST['subject'];
     $message = $_POST['message']
 
-    // Import PHPMailer classes into the global namespace
+// Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 
 //Load Composer's autoloader
@@ -22,7 +22,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-                     //Enable verbose debug output
+    //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'awtmail.awt.cloud';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
